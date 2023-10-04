@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\system_at32f4xx.o"
+".\objects\startup_at32f413rx_hd.o"
+".\objects\at32f4xx_it.o"
+".\objects\main.o"
+".\objects\at32_delay.o"
+".\objects\configuration.o"
+".\objects\global.o"
+".\objects\at32f4xx_exti.o"
+".\objects\at32f4xx_flash.o"
+".\objects\at32f4xx_gpio.o"
+".\objects\at32f4xx_gpio_ex.o"
+".\objects\at32f4xx_i2c.o"
+".\objects\at32f4xx_rcc.o"
+".\objects\at32f4xx_spi.o"
+".\objects\at32f4xx_usart.o"
+".\objects\misc.o"
+".\objects\at32f4xx_adc.o"
+".\objects\at32f4xx_dma.o"
+".\objects\at32f4xx_tim.o"
+--library_type=microlib --strict --scatter ".\Objects\AT32_proj.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\AT32_proj.map" -o .\Objects\AT32_proj.axf
